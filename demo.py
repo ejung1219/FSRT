@@ -216,8 +216,8 @@ if __name__ == "__main__":
     source_image = np.array(source_image)
     
     #Load the checkpoints
-    checkpoint = Checkpoint('./', device='cuda:0', encoder=encoder_module,
-                                decoder=decoder_module, expression_encoder=expression_encoder_module)
+    checkpoint = Checkpoint('fsrt/', device='cuda:0', encoder=encoder_module,
+                            decoder=decoder_module, expression_encoder=expression_encoder_module)
     load_dict = checkpoint.load(opt.checkpoint)    
 
 
